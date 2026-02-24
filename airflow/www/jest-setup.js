@@ -27,7 +27,7 @@ import "jest-canvas-mock";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import moment from "moment-timezone";
 
-axios.defaults.adapter = require("axios/lib/adapters/http");
+axios.defaults.adapter = "http";
 
 axios.interceptors.response.use((res) => res.data || res);
 
